@@ -1,0 +1,41 @@
+.cont{
+    margin-left: 50px;
+    margin-right: 50px;
+    max-width: 1400px;
+    justify-content: center;
+}
+
+.card{
+    width:350px; 
+    border-color: black; border-width: 2px;
+    box-shadow: 3px;
+    height:300px;
+    
+    
+    
+}
+
+.card1{
+    padding: 10px 10px 10px 10px ;
+}
+
+
+.card-title{
+    
+    font-size:15px; 
+    margin-bottom: 5px;
+    
+}
+
+.card-text{
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.img_1{
+    /* background: URL(../watches/WA1.webp) ; */
+    
+    height:135px;
+    width:90px;
+    margin-bottom: 10px;
+}

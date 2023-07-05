@@ -1,0 +1,67 @@
+<h2>Welcome to Pants collection</h2>
+<button class="btn  btn-warning ml-3" (click)="goForm()">Add Pants</button>
+<div class="card ">
+
+    <table>
+        <tr >
+            
+            <th>Index</th>
+            <th>Product ID</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Price</th>
+            <th>action</th>
+        </tr>
+        <tr *ngFor="let pant of pants |async ,let i=index">
+            <td>{{i+1}}</td>
+            <td>{{pant.id}}</td>
+            <td>{{pant.name}}</td>
+            <td>{{pant.color}}</td>
+            <td>{{pant.price}}</td>
+            <td><input type="button"  name="btnEdit" value="Edit"
+                    (click)="EditPant(pant)">
+                <input style="margin-left: 10px;" type="button"  name="btndelete"
+                    value="Remove" (click)="deletePant(pant.id)">
+            </td>
+        </tr>
+
+    </table>
+
+    <!-- Edit Book Details -->
+    <div *ngIf="show1" class="form">
+        <form *ngFor="let pt1 of updatePantData " class="text-center" #pantform="ngForm"
+            (ngSubmit)="updatePant(pantform.value)">
+            <h3 class="text-center mt-5">Edit Pant Details</h3>
+            <input type="text" ngModel [ngModel]="pt1.id" class="form-control mt-3" name="id"
+                placeholder="Enter id"><br>
+            <input type="text" ngModel [ngModel]="pt1.name" class="form-control mt-3" name="name"
+                placeholder="Enter Name"><br>
+            <input type="text" ngModel [ngModel]="pt1.color" class="form-control mt-3" name="color"
+                placeholder="Enter color"><br>
+            <input type="number" ngModel [ngModel]="pt1.price" class="form-control mt-3" name="price"
+                placeholder="Enter price"><br>
+            <br>
+            <button class="btn btn-sm btn-success butt mb-3">Submit</button>
+        </form>
+    </div>
+
+</div>
+
+ <!--Add Book -->
+
+ <div *ngIf="showform" class="form mt-3">
+    <form  class="text-center" #pantform2="ngForm"
+        (ngSubmit)="addPant(pantform2.value)">
+        <h3 class="text-center mt-5">Edit Book Details</h3>
+        <input type="text" ngModel  class="form-control mt-3" name="id"
+            placeholder="Enter id"><br>
+        <input required type="text" ngModel class="form-control mt-3" name="name"
+            placeholder="Enter Name"><br>
+        <input required type="text" ngModel  class="form-control mt-3" name="color"
+            placeholder="Enter color"><br>
+        <input required type="number" ngModel  class="form-control mt-3" name="price"
+            placeholder="Enter price"><br>
+        <br>
+        <button class="btn btn-sm btn-success butt mb-3" [disabled]="pantform2.invalid">Submit</button>
+    </form>
+</div> 

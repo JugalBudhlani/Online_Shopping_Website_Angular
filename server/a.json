@@ -1,0 +1,22 @@
+{
+    "users":[
+        {
+            "userid": "1",
+            "Name":"Jugal Budhlani",
+            "username": "Jugal",
+            "Password": "jugal13",
+            "Email": "jugalbudhlani21@gmail.com",
+            "cart": []
+      
+            
+          },
+          {
+            "userid": "2",
+            "Name":"Jagga Jasoos",
+            "username": "Jaggaa",
+            "Password": "jug1308",
+            "Email": "jugalbudhlani1308@gmail.com",
+            "cart":[]
+          }
+        ]
+}

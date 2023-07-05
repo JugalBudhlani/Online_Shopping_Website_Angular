@@ -1,0 +1,29 @@
+
+
+<div class="container cont" style="text-align: center; align-content: center;">
+    <div class="row">
+      <div class="col-xl-4 my-5" align="center" style="border-color: black; border-width: 7px;" *ngFor="let watch of watches |async">
+        <div class="card">
+            <img class="card-img-top">
+            <div class="card-body">
+                <div >
+                  
+                <img src="assets/watches/{{watch.id}}.webp" class="img_1">
+                </div>
+                <div style="margin-bottom: 10px;">
+                <h6 class="card-title font-weight-bold">{{watch.name}}</h6>
+                <h6 class="card-text">{{watch.type}}</h6>
+                <h6 class="card-text" style="color: darkred;">{{watch.price}}</h6>
+                </div>
+                <div>
+                  <button class="btn btn-primary mx-2" >Add to Cart</button>
+                  <button class="btn btn-outline-primary  mx-2">Buy Now</button>
+                </div>
+
+            </div>
+            
+
+        </div>
+      </div>
+    </div>
+  </div>

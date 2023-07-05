@@ -1,0 +1,160 @@
+<head>
+     <link rel="icon" sizes="180x180" href="/src/assets/favicon/favicon.ico">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="apple-touch-icon" sizes="180x180" href="src/assets/favicon/favicon.ico">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet"> -->
+     <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
+     
+       
+     <!-- <script src="functions.js"></script> -->
+</head>
+
+    <br><br>  
+<!-- <nav *ngIf="!loggedIn" class="navbar navbar-expand-lg navbar-light bg-dark" style="margin: 0px;"> -->
+<nav *ngIf="(loginService.authenticated$ | async) === false" class="navbar navbar-expand-lg navbar-light bg-dark" style="margin: 0px;">
+    <!-- <link style="" rel="apple-touch-icon" sizes="180x180" href="/src/assets/favicon/favicon.ico"> -->
+    <a class="navbar-brand" style="font-family: 'Allura'; color: beige; font-size: 25px;padding-right: 280px; margin-top: 4px; margin-bottom: 4px;" href="#">Jugal  Budhlani
+        <!-- <img src= "https://i.ibb.co/42BBgWt/JUGAL-BUDHLANI-2.jpg" width="70" height="70" alt="" style="background-color: #e3f2fd;   "> -->
+        
+    </a>
+        <!-- <a class="nav-link" style="font-weight: 700; color:brown ;" routerLink="#">Jugal Budhlani</a> -->
+    
+<a class="nav-link nav_text"  routerLink="home">Home</a>
+<a class="nav-link nav_text" routerLink="shirt">Shirts</a>
+<a class="nav-link  nav_text" routerLink="pant">Pants</a>
+<a  class="nav-link  nav_text" routerLink="watch">Watches</a>
+<!-- <a class="nav-link  nav_text" (click)="logout()">Logout</a> -->
+<a  class="nav-link nav_text" routerLink="login">Login</a>
+<a  class="nav-link nav_text" routerLink="register">Register</a>
+<!-- <a  *ngIf="loggedIn" class="nav-link nav_text" onclick="logout()">Logout</a> -->
+
+<div class="search-container" style="padding-left: 200px">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit" class="userbtn"><i class="fa fa-search"></i></button> 
+</div>
+<i class="fa fa-shopping-cart cart" routerLink="cart"></i>
+<!--    <button (click)="show()" class="bg-dark userbtn" ><i class="fa fa-user-circle-o cart" aria-hidden="true"></i></button> -->
+<!-- <i class="fa fa-user-circle-o cart" aria-hidden="true" (click)="show()"></i> -->
+<!-- <i class="fa fa-user-circle-o cart" aria-hidden="true" (click)="logout()"></i> -->
+</nav>
+
+<!-- <nav *ngIf="loggedIn" class="navbar navbar-expand-lg navbar-light bg-dark" style="margin: 0px;"> -->
+<nav *ngIf="(loginService.authenticated$ | async) === true" class="navbar navbar-expand-lg navbar-light bg-dark" style="margin: 0px;">
+    <!-- <link style="" rel="apple-touch-icon" sizes="180x180" href="/src/assets/favicon/favicon.ico"> -->
+    <a class="navbar-brand" style="font-family: 'Allura'; color: beige; font-size: 25px;padding-right: 280px; margin-top: 4px; margin-bottom: 4px;" href="#">Jugal  Budhlani
+        <!-- <img src= "https://i.ibb.co/42BBgWt/JUGAL-BUDHLANI-2.jpg" width="70" height="70" alt="" style="background-color: #e3f2fd;   "> -->
+        
+    </a>
+        <!-- <a class="nav-link" style="font-weight: 700; color:brown ;" routerLink="#">Jugal Budhlani</a> -->
+    
+<a class="nav-link nav_text"  routerLink="home">Home</a>
+<a class="nav-link nav_text" routerLink="shirt">Shirts</a>
+<a class="nav-link  nav_text" routerLink="pant">Pants</a>
+<a  class="nav-link  nav_text" routerLink="watch">Watches</a>
+<!-- <a class="nav-link  nav_text" (click)="logout()">Logout</a> -->
+<!-- <a *ngIf="!loggedIn" class="nav-link nav_text" routerLink="login">Login</a> -->
+<!-- <a *ngIf="!loggedIn" class="nav-link nav_text" routerLink="register">Register</a> -->
+<a class="nav-link nav_text" (click)="logout()" routerLink="/">Logout</a>
+
+<div class="search-container" style="padding-left: 200px">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit" class="userbtn"><i class="fa fa-search"></i></button> 
+</div>
+<i class="fa fa-shopping-cart cart" routerLink="cart"></i>
+<!--    <button (click)="show()" class="bg-dark userbtn" ><i class="fa fa-user-circle-o cart" aria-hidden="true"></i></button> -->
+<!-- <i class="fa fa-user-circle-o cart" aria-hidden="true" (click)="show()"></i> -->
+<!-- <i class="fa fa-user-circle-o cart" aria-hidden="true" (click)="logout()"></i> -->
+</nav>
+
+<div [style.display]="showModal ? 'block' : 'none'" class="modal cont" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" >
+      <div class="modal-content" >
+        
+        <!-- <div class="modal-body"> -->
+            <!-- <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f['email'].errors }" />
+                    <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+                        <div *ngIf="f['email'].errors?.['required']">Email is required</div>
+                        <div *ngIf="f['email'].errors?.['email']">Email must be a valid email address</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f['password'].errors }" />
+                    <div *ngIf="submitted && f['password'].errors" class="invalid-feedback">
+                        <div *ngIf="f['password'].errors?.['required']">Password is required</div>
+                        <div *ngIf="f['password'].errors?.['minlength']">Password must be at least 6 characters</div>
+                    </div>
+                  </div>
+              <div class="form-group form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form> -->
+
+            <div class="container1" #container1>
+                <div class="form-container sign-up-container">
+                    <form action="#" class="form1">
+                        <h1>Create Account</h1>
+                        <div class="social-container">
+                            <a href="#" class="social"><i class="fa fa-facebook-f"></i></a>
+                            <a href="#" class="social"><i class="fa fa-google-plus-g"></i></a>
+                            <a href="#" class="social"><i class="fa fa-linkedin-in"></i></a>
+                        </div>
+                        <span>or use your email for registration</span>
+                        <input class="input1" type="text" placeholder="Name" />
+                        <input  class="input1" type="email" placeholder="Email" />
+                        <input class="input1" type="password" placeholder="Password" />
+                        <button class="button1">Sign Up</button>
+                    </form>
+                </div>
+                <div class="form-container sign-in-container">
+                    <form action="#">
+                        <h1>Sign in</h1><br>
+                        <div class="social-container">
+                            <a href="#" class="social"><i class="fa fa-facebook-f"></i></a>
+                            <a href="#" class="social"><i class="fa fa-google-plus-g"></i></a>
+                            <a href="#" class="social"><i class="fa fa-linkedin-in"></i></a>
+                            <br>
+                        </div>
+                        <span><br>or use your account</span><br>
+                        <input  class="input1" type="email" placeholder="Email" /><br>
+                        <input  class="input1" type="password" placeholder="Password" /><br>
+                        <a href="#">Forgot your password?</a><br><br>
+                        <button class="button1" style="left: 20px;" >Sign In</button>
+                    </form>
+                </div>
+                <div class="overlay-container">
+                    <div class="overlay">
+                        <div class="overlay-panel overlay-left">
+                            <h1>Welcome Back!</h1>
+                            <p>To keep connected with us please login with your personal info</p>
+                            <button class=" button1" #signInButton>Sign In</button>
+                        </div>
+                        <div class="overlay-panel overlay-right">
+                            <h1>Hello, Friend!</h1>
+                            <p>Enter your personal details and start journey with us</p>
+                            <button class=" button1" #signUpButton >Sign Up</button>
+                            <br>
+                            <button type="button" class="btn btn-dark" data-dismiss="modal" (click)="hide()">Close</button>
+                            
+                        </div>
+                        
+                    </div>
+                    <!-- <button type="button" class="btn btn-dark" data-dismiss="modal" (click)="hide()">Close</button> -->
+                </div>
+                
+            </div>
+            
+        </div>
+        
+      </div>
+    </div>
+    <!-- </div> -->
+
+<router-outlet></router-outlet>

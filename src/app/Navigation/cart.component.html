@@ -1,0 +1,71 @@
+<!-- <div class="" style="padding-top: 10px;">
+    <div class="row justify-content-center mb-3">
+        <div class="col-md-12 col-xl-10" *ngFor="let cartitem of car |async">
+          <div class="card shadow-0 border rounded-3">
+            <div class="card-body" >
+              <div class="row">
+                <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0" style="text-align: center;">
+                  <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                    <img src="assets/shirts/{{cartitem.cart[1]}}.webp"
+                      class="sh_img" />
+                    <a href="#!">
+                      <div class="hover-overlay">
+                        <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-6">
+                  <h1>{{selectedShirt.name}}</h1>
+                  <h2 style="color: slategrey;"><b>Color: </b>{{selectedShirt.color}}</h2>
+                  <div class="d-flex flex-row">
+                    <div class="text-danger mb-1 me-2">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <span>289</span>
+                  </div>
+                  <div class="mt-1 mb-0 text-muted small">
+                    <span>100% cotton</span>
+                    <span class="text-primary"> • </span>
+                    <span>Light weight</span>
+                    <span class="text-primary"> • </span>
+                    <span>Best finish<br /></span>
+                  </div>
+                  <div class="mb-2 text-muted small">
+                    <span>Unique design</span>
+                    <span class="text-primary"> • </span>
+                    <span>For men</span>
+                    <span class="text-primary"> • </span>
+                    <span>Casual<br /></span>
+                  </div>
+                  
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                  <div class="d-flex flex-row align-items-center mb-1">
+                    <h2 class="mb-1 me-1">{{selectedShirt.price}}</h2>
+                    <span class="text-danger"><s>&#8377;5000</s></span>
+                  </div>
+                  <h4 class="text-success" style="padding-bottom: 10px;">Free shipping</h4>
+                  <div class="d-flex flex-column mt-4">
+                    <button class="btn btn-primary btn-sm mb-2" type="button" (click)="addToCart(selectedShirt.ID)">Add to Cart</button>
+                    <button class="btn btn-outline-primary btn-sm mt-2" type="button">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</div> -->
+
+<div *ngFor="let ci of cartItems">
+  <h1>{{ci}}</h1>
+  <!-- <h1>{{cartItems}}</h1> -->
+
+</div>

@@ -1,0 +1,363 @@
+{
+  "shirts": [
+    {
+      "id": "SH1",
+      "name": "Raymonds",
+      "color": "White",
+      "price": 2999
+    },
+    {
+      "id": "SH2",
+      "name": "Allen Solly",
+      "color": "Beige",
+      "price": 1999
+    },
+    {
+      "id": "SH3",
+      "name": "BlackBerrys",
+      "color": "Black",
+      "price": 1299
+    },
+    {
+      "id": "SH4",
+      "name": "Armani Exchange",
+      "color": "Pink",
+      "price": 3999
+    },
+    {
+      "id": "SH6",
+      "name": "Raymonds",
+      "color": "blue",
+      "price": 9000
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    },
+    {
+      "id": "SH7",
+      "name": "Armani",
+      "color": "Pink",
+      "price": 12345
+    }
+  ],
+  "pants": [
+    {
+      "id": "PA1",
+      "name": "Raymonds Solid",
+      "color": "grey",
+      "price": 2999
+    },
+    {
+      "id": "PA2",
+      "name": "KillerX Torn jeans",
+      "color": "grey black",
+      "price": 1599
+    },
+    {
+      "id": "PA3",
+      "name": "Roadster Trousers",
+      "color": "beige",
+      "price": 999
+    },
+    {
+      "id": "PA4",
+      "name": " KETCH Cargos",
+      "color": "camouflage",
+      "price": 1899
+    },
+    {
+      "id": "PA5",
+      "name": "Lee Cooper",
+      "color": "Sky Blue",
+      "price": 1233
+    }
+  ],
+  "watches": [
+    {
+      "id": "WA1",
+      "name": "Armani Exchange",
+      "type": "Mechanical",
+      "price": 8999
+    },
+    {
+      "id": "WA2",
+      "name": "Tommy Hilfiger",
+      "type": "Mechanical",
+      "price": 6999
+    },
+    {
+      "id": "WA3",
+      "name": "Apple Iwatch",
+      "type": "Digital Smartwatch",
+      "price": 29999
+    },
+    {
+      "id": "WA4",
+      "name": "Noise smartwatch",
+      "type": "Digital Smartwatch",
+      "price": 2999
+    },
+    {
+      "id": "WA5",
+      "name": "fastrack",
+      "type": "Sports Analog",
+      "price": 4999
+    }
+  ],
+  "users": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "name": "Varun Peddi",
+      "username": "VArunP",
+      "password": "varun121",
+      "email": "varunpeddi2000@gmail.com",
+      "cart": ["SH1","SH2"],
+      "id": 3
+    },
+    {
+      "name": "Rahul Patil",
+      "username": "Bunny09",
+      "password": "Rahul0909",
+      "email": "rahulpatil09@gmail.com",
+      "cart": [],
+      "id": 4
+    },
+    {
+      "name": "Diksha Gular",
+      "username": "Diksha1234",
+      "password": "diksha12",
+      "email": "dikshag45@gmail.com",
+      "cart": [],
+      "id": 5
+    },
+    {
+      "name": "Kedar Saraf",
+      "username": "thekedarsaraf",
+      "password": "kd12345",
+      "email": "kedars1234@gmail.com",
+      "cart": [],
+      "id": 6
+    },
+    {
+      "name": "Jugal Budhlani",
+      "username": "Jaggaa",
+      "password": "jugal123",
+      "email": "jugalbudhlani21@gmail.com",
+      "cart": [],
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "category": "shirts",
+      "id": 9
+    }
+  ]
+}
